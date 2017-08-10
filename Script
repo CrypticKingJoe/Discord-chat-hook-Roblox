@@ -1,0 +1,9 @@
+local DiscordAPI = require(728421447)("HookHere") -- This is for discord idiots but someone with even half a brain can make this 
+
+game.Players.PlayerAdded:Connect(function(plr)
+    plr.Chatted:Connect(function(msg)
+        DiscordAPI(plr.Name, msg)
+    end)
+end)
+
+-- You need HTTP Serice enabled 
